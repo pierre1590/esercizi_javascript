@@ -195,9 +195,9 @@ console.log('Esercizio 10:');
     {
        f=f*i
     }
-    return(f)
+    return f
   }
-  console.log('Il fattoriale è: '+fatt(5))
+  console.log('Il fattoriale è: '+fatt(7));
   
 
 
