@@ -111,16 +111,16 @@ console.log('\n');
 
 //7 ESERCIZIO
 console.log('Esercizio 7:');
-var stringa4 = "Hello  World";
+var stringa4 = "Hello World";
 stringa4 = stringa4.toLowerCase();
-
+stringa4 = stringa4.split(' ').join('');
 console.log(stringa4);
 //Funzione max carattere
 function maxValore(a, n)
     {
            
-        //Inizializzo valore max ad 'z'
-        let max = 'Z';
+        //Inizializzo valore max ad 'A'
+        let max = 'A';
        
         //Cerco il numero max
         for (let i = 0; i < n; i++)
@@ -134,11 +134,11 @@ function maxValore(a, n)
        //Funzione min carattere
     function minValore(a, n)
     {
-        //Inizializzo valore min a 'a'
-        let min = 'a';
+        //Inizializzo valore min a 'z'
+        let min = 'z';
        
         //Cerco il numero min
-        for (let i = 0; i < n -1; i++)
+        for (let i = 0; i < n; i++)
             if (a[i].charCodeAt() < min.charCodeAt())
                 min = a[i];
        
@@ -147,7 +147,8 @@ function maxValore(a, n)
     }
 
        
-   
+ 
+
 var size = stringa4.length;
 
 console.log("Il carattere più grande è: " + maxValore(stringa4,size));
