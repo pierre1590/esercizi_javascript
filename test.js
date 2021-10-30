@@ -31,7 +31,13 @@ var stringa = ' ';
 
 
 console.log('\n');
+const multipliTre = () => {
+    let stringa = '';
+    
+    
+}
 
+console.log('\n');
 //4 ESERCIZIO
 console.log('Esercizio 4:');
 for(i=0; i<40; i+=2){
@@ -40,7 +46,7 @@ for(i=0; i<40; i+=2){
 
 console.log('\n');
 
- //5 ESERCIZIO
+ /* //5 ESERCIZIO
 console.log('Esercizio 5:\n'+'vedi pagina web');
 	 document.write('<table border=1 cellpadding = 10>');
           for (let i=1; i<=10; i++) {
@@ -56,7 +62,7 @@ console.log('Esercizio 5:\n'+'vedi pagina web');
             document.write('</tr>');
           }
           document.write('</table>');
- 
+  */
 
 console.log('\n')
 
@@ -112,8 +118,8 @@ stringa4 = stringa4.toLowerCase();
 function maxValore(a, n)
     {
            
-        //Inizializzo valore max ad 'A'
-        let max = 'A';
+        //Inizializzo valore max ad 'Z'
+        let max = 'Z';
        
         //Cerco il numero max
         for (let i = 0; i < n; i++)
@@ -127,8 +133,8 @@ function maxValore(a, n)
        //Funzione min carattere
     function minValore(a, n)
     {
-        //Inizializzo valore min a 'z'
-        let min = 'z';
+        //Inizializzo valore min a 'a'
+        let min = 'a';
        
         //Cerco il numero min
         for (let i = 0; i < n -1; i++)
