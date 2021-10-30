@@ -190,6 +190,15 @@ const fib = (n) => {
 }
 console.log('I primi 10 numeri della serie di Fibonacci sono: '+fib(10))
 
+console.log('\n')
+function Fibonacci(a, b, n) {
+    if (n > 0) {
+       console.log(a + ' ');
+        Fibonacci(b, a+b, n-1);
+    }
+}
+
+Fibonacci(0, 1, 10);
 
 console.log('\n')
 
