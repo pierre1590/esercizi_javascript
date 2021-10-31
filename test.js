@@ -228,6 +228,9 @@ for(i=97,a='';i<123;){
 console.log(a.toUpperCase())
 console.log('\n')
 
+
+
+console.log('\n')
 //12 ESERCIZIO
 console.log('Esercizio 12:'); 
 var stringa = ' ';
