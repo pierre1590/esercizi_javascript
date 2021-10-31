@@ -31,13 +31,10 @@ var stringa = ' ';
 
 
 console.log('\n');
-const multipliTre = () => {
-    let stringa = '';
-    
-    
-}
 
-console.log('\n');
+
+
+
 //4 ESERCIZIO
 console.log('Esercizio 4:');
 for(i=0; i<40; i+=2){
@@ -131,8 +128,8 @@ function maxValore(a, n)
         return max;
     }
 
-       //Funzione min carattere
-    function minValore(a, n)
+//Funzione min carattere
+function minValore(a, n)
     {
         //Inizializzo valore min a 'z'
         let min = 'z';
@@ -145,9 +142,6 @@ function maxValore(a, n)
         //Ritorna l'elemento min
         return min;
     }
-
-       
- 
 
 var size = stringa4.length;
 
@@ -204,20 +198,23 @@ console.log('\n')
 
 //10 ESERCIZIO 
 console.log('Esercizio 10:');
- function fatt(n)
-  { 
-    var i,f 
-    f=1
-    for(i=n;i>1;i--)
-    {
-       f=f*i
-    }
-    return f
-  }
-  console.log('Il fattoriale è: '+fatt(7));
-  
+  function fattoriale(num) {
 
+    // Se il numero e' minore di 0 lo scarta 
+     if (num < 0) {  
+      return "Il fattoriale di un numero negativo non esiste.";  
+    }  
+    // Se il numero e' uguale a 0 il suo fattoriale e' 1 per definizione  
+    else if (num == 0) {  
+      return 1;  
+    }  
+    // In tutti gli altri casi richiama 
+    else {  
+      return (num * fattoriale(num - 1));  
+    }  
+  } 
 
+console.log("Il fattoriale è:  "+fattoriale(5));
 
 
 console.log('\n')
@@ -234,7 +231,7 @@ console.log('\n')
 //12 ESERCIZIO
 console.log('Esercizio 12:'); 
 var stringa = ' ';
-for(i=0;i<15;i++){
+for(i=0;i<10;i++){
     stringa += (' * ')+ ' ';
     console.log(stringa);
 }
